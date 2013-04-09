@@ -184,6 +184,7 @@ void start()
   lcd.setCursor(0,1);
   lcd.print("*");
   delay(1000);
-  analogWrite(POWER_LED, POWER*2.55);
+  analogWrite(POWER_LED, (POWER*2.55)*0.26);
   delay(TIME*1000);
+  analogWrite(POWER_LED, 0);
 }
